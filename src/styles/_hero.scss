@@ -1,3 +1,5 @@
+@use "variables";
+
 .hero {
     position: relative;
     padding-top: 64px;
@@ -15,7 +17,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        background-color: #000;
+        background-color: variables.$secundaryTextColor;
         opacity: .7;
         width: 100%;
         height: 100%;
@@ -27,6 +29,10 @@
         line-height: 56px;
         font-weight: 900;
         text-align: center;
+
+        span {
+            display: block;
+        }
     }
 
     &__logo {
